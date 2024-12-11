@@ -1,0 +1,9 @@
+/* Styles for the body element */
+body {
+    background-color: rgb(237, 10, 10); /* Sets a bright red background */
+    color: white; /* Ensures text is readable on the red background */
+    font-family: Arial, sans-serif; /* Applies a clean, readable font */
+    margin: 0; /* Removes default browser margins */
+    padding: 0; /* Removes default browser padding */
+    text-align: center; /* Centers text content horizontally */
+}
