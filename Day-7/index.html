@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application Form - Webdev Journey</title>
 </head>
+
 <body>
-    
+    <!-- Header Section -->
+    <h1>Apply for Sigma Web Development Course - Teaching Assistant</h1>
+    <p>Fill out the form below to apply for the TA position in the Sigma Web Development course. All fields are required unless specified.</p>
+
+    <!-- Form Section -->
+    <form action="post">
+        <!-- Username Input -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus>
+        </div>
+
+        <!-- Gender Selection -->
+        <div>
+            <p>Select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to our newsletter for updates</label>
+        </div>
+
+        <!-- Comments Section -->
+        <div>
+            <label for="comment">Comments or Questions:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comments or questions here..."></textarea>
+        </div>
+
+        <!-- Preferred Fruit Selection -->
+        <div>
+            <label for="fruits">Select your favorite fruit:</label>
+            <select id="fruits" name="fruits" required>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+                <option value="mango">Mango</option> <!-- Added more options -->
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit Application</button>
+        </div>
+    </form>
 </body>
+
 </html>
